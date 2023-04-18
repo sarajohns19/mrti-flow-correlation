@@ -1,22 +1,24 @@
 # mrti-flow-correlation
 Statistical analysis of immune cell populations across groups and in correlation to MR thermometry data
 
-Scripts
--	analysis_script.py
+MRTI Data Preprocessing
+- Example_MRTI_recon_script.m
+- tumorsegScript.m
+- ExportTotable.m
+
+Data Import
 -	create_tumorvol_df.py
 -	create_histoseg_df.py
-- FlowJo_csv_import.m
+
+Flow and MRTI data Analysis
+-	analysis_script.py
+- flow_plotting.py (module) 
 
 
-Files
--	FlowJo_Analysis/tumor_volume_data.pkl 
-o	output of create_tumorvol_df.py
--	FlowJo_Analysis/h&e_necrosis_seg.pkl
-o	output of create_histoseg_df.py
--	Users/sarajohnson/Box/Work Documents/XFUS Research/Immunotherapy Project/Experiments/MRTIstats.csv’
-o	Output of MATLAB analysis scripts
--	Users/sarajohnson/Box/Flow Cytometry Data/Compiled Results/Tumor_counts.csv
-o	Output of FlowJo
--	Users/sarajohnson/Box/Flow Cytometry Data/Compiled Results/Spleen_counts.csv
-o	Output of FlowJo
-![image](https://user-images.githubusercontent.com/21269126/232663254-b24759a0-29cc-4075-a478-ea1d30774c85.png)
+Data Files
+-	tumor_volume_data.pkl  (output of create_tumorvol_df.py0
+-	h&e_necrosis_seg.pkl (output of create_histoseg_df.py)
+-	MRTIstats.csv (Output of MATLAB ExportTotable.m)
+-	Tumor_counts.csv (CSV Output of FlowJo population gates)
+-	Spleen_counts.csv (CSV Output of FlowJo population gates)
+
